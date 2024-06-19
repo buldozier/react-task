@@ -1,0 +1,17 @@
+.page-holder .my-textarea {
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  line-height: 1;
+  min-height: auto;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  resize: none;
+
+  &:focus, &:active {
+    border-color: #388BFF;
+    background-color: var(--site-light-color);
+  }
+}

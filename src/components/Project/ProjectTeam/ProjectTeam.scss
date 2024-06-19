@@ -1,0 +1,49 @@
+.project-team {
+  align-items: center;
+  display: flex;
+
+  &__item {
+    &:not(:first-child) {
+      margin-left: -5px;
+
+    }
+
+    &.is-creator {
+      margin-left: 15px;
+      order: 1;
+
+      @media screen and (max-width: 600px) {
+        margin: 0 15px 0 0;
+      }
+    }
+
+    & .avatar {
+      height: 28px;
+      max-height: 28px;
+      max-width: 28px;
+      min-height: 28px;
+      min-width: 28px;
+      width: 28px;
+    }
+  }
+
+  &__item-loading {
+    display: flex;
+
+    & > span {
+      &:first-child {
+        margin-left: 15px;
+        order: 1;
+      }
+
+      &:not(:first-child) {
+        margin-left: -5px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    align-self: flex-start;
+    flex-direction: row-reverse;
+  }
+}

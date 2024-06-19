@@ -1,0 +1,30 @@
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  border: 2px solid #dfe1e6;
+  cursor: pointer;
+
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out;
+
+  &:hover {
+    border-color: var(--site-accent-blue-color);
+  }
+
+  &.active {
+    background-color: var(--site-accent-blue-color);
+    border-color: var(--site-accent-blue-color);
+  }
+
+  & svg {
+    width: 12px;
+    height: 12px;
+
+    & path {
+      fill: var(--site-light-color);
+    }
+  }
+}

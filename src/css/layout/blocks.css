@@ -1,0 +1,104 @@
+/* blocks.csss
+ * Стили блоков сайта, основной рабочий файл
+ *
+ */
+
+/*
+
+1. HEADER
+2. MAIN
+3. FOOTER
+*/
+
+
+/* 1. HEADER */
+.header__holder{
+  padding: 25px 0;
+  background-color: var(--site-light-color);
+}
+.header__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__profile{
+  margin-left: auto;
+  font-weight: 600;
+  padding-right: 24px;
+  cursor: pointer;
+}
+.header__profile-holder{
+  display: flex;
+  align-items: center;
+}
+.header__profile-dropdown{
+  cursor: default;
+}
+.header__profile-holder-img,
+.header__profile-dropdown-top-img{
+  margin-right: 6px;
+  user-select: none;
+}
+.header__profile-dropdown-top{
+  display: flex;
+  padding-bottom: 16px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--site-light-grey-color);
+}
+.header__profile-dropdown-top-info{
+  white-space: nowrap;
+  font-size: 18px;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+.header__profile-dropdown-top-info-email{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: unset;
+  color: var(--site-grey-color);
+}
+
+.header__profile-dropdown a,
+.page-holder .header__profile-dropdown a{
+  display: block;
+  color: var(--site-default-color);
+  border: none;
+}
+.header__profile-dropdown a:hover,
+.page-holder .header__profile-dropdown a:hover,
+.header__profile-dropdown a:active,
+.page-holder .header__profile-dropdown a:active{
+  color: var(--site-accent-color);
+}
+.header__profile-dropdown-links-item a,
+.page-holder .header__profile-dropdown-links-item a{
+  padding: 10px 14px;
+  padding-left: 44px;
+  font-size: 16px;
+  line-height: 1.25;
+  background-repeat: no-repeat;
+	background-position: 12px center;
+	background-size: 24px;
+}
+.header__profile-dropdown-links-item--profile a,
+.page-holder .header__profile-dropdown-links-item--profile a{
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2Z' stroke='%239CA3AF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4.271 18.346C4.271 18.346 6.5 15.5 12 15.5C17.5 15.5 19.73 18.346 19.73 18.346M12 12C12.7956 12 13.5587 11.6839 14.1213 11.1213C14.6839 10.5587 15 9.79565 15 9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6C11.2043 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9C9 9.79565 9.31607 10.5587 9.87868 11.1213C10.4413 11.6839 11.2043 12 12 12Z' stroke='%239CA3AF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+
+}
+.header__profile-dropdown-links-item--logout a,
+.page-holder .header__profile-dropdown-links-item--logout a{
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 12H19M19 12L16 15M19 12L16 9M19 6V5C19 4.46957 18.7893 3.96086 18.4142 3.58579C18.0391 3.21071 17.5304 3 17 3H7C6.46957 3 5.96086 3.21071 5.58579 3.58579C5.21071 3.96086 5 4.46957 5 5V19C5 19.5304 5.21071 20.0391 5.58579 20.4142C5.96086 20.7893 6.46957 21 7 21H17C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19V18' stroke='%239CA3AF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+
+}
+.task-content-comments-item .autoresize-textarea a,
+.task-content-description-input a {
+  color: #0c66e4;
+  text-decoration: none;
+}
+.task-content-comments-item .autoresize-textarea a:hover,
+.task-content-description-input a:hover {
+  text-decoration: underline;
+}
+/* 2. MAIN */
+/* 3. FOOTER */

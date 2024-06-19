@@ -1,0 +1,42 @@
+.modal-task-loader {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+
+  &__title {
+    margin-right: 50px;
+    margin-bottom: 16px;
+    width: calc(100% - 50px) !important;
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 20px;
+
+    &-left {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      flex: 4;
+      max-width: 548px;
+    }
+
+    &-right{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      flex: 1;
+      min-width: 168px;
+    }
+
+    &-right-header {
+      margin-bottom: 10px;
+    }
+
+    &-right-properties {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+}

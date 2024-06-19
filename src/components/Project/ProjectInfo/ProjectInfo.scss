@@ -1,0 +1,82 @@
+.project-info {
+  padding: 12px 40px;
+  min-height: 56px;
+  display: flex;
+  justify-content: space-between;
+
+  &__name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+
+    & h4 {
+      background: transparent;
+      border-radius: 3px;
+      color: var(--site-default-color);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 32px;
+      margin: 0;
+      overflow: hidden;
+      text-decoration: none;
+      text-overflow: ellipsis;
+      transition: background .2s;
+      white-space: nowrap;
+      width: 100%;
+    }
+  }
+
+  &__logo {
+    border: 1px solid #0000003d;
+    border-radius: 99px;
+    height: 32px;
+    min-height: 32px;
+    min-width: 32px;
+    overflow: hidden;
+    width: 32px;
+
+    &-skeleton {
+      padding: 2px;
+    }
+
+    & img {
+      border-radius: 99px;
+      height: 30px;
+      object-fit: contain;
+      padding: 1px;
+      width: 30px;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 10px;
+  }
+}
+
+.project-members {
+  position: relative;
+
+  &__open-btn {
+    background-color: #dfe1e6;
+    border-radius: 3px;
+    height: 30px;
+    transition: background .2s ease;
+    width: 30px;
+    min-width: 30px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none'%3E%3Cpath d='m5 8.333 5 5 5-5' stroke='%23202020' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    transition: -webkit-transform .2s ease;
+    transition: transform .2s ease, -webkit-transform .2s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ffffff30;;
+    }
+  }
+}

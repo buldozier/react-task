@@ -1,0 +1,51 @@
+.project-create{
+  position: relative;
+  margin-left: 35px;
+}
+
+.project-create .dropdown {
+  top: calc(100% + 8px);
+  left: 0;
+  padding: 12px !important;
+
+  &__input {
+    min-height: 30px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 20px;
+    border-width: 2px;
+    border-color: #0C66E4;
+    margin-bottom: 16px;
+  }
+
+  &__submit {
+    & button{
+      min-width: 100%;
+      padding: 10px;
+      text-align: center;
+      color: var(--site-light-color);
+      background-color: #0C66E4;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+
+      &:hover, &:active {
+        background-color: #0b52bb;
+      }
+    }
+
+    &.disabled button {
+      background-color: #091E4208;
+      pointer-events: none;
+      cursor: default;
+      color: #091E424F;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    left: -90px;
+  }
+
+  @media screen and (max-width: 350px) {
+    left: 0;
+  }
+}

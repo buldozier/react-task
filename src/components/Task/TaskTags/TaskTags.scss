@@ -1,0 +1,62 @@
+.tags{
+    &__list{
+
+        &-item{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 6px;
+            min-height: 30px;
+
+            &-name{
+                font-size: 15px !important;
+                min-height: 30px;
+                display: flex;
+                align-items: center;
+
+                input{
+                    font-size: 15px !important;
+                    padding-top: 2px !important;
+                    padding-bottom: 2px !important;
+                    padding-left: 6px !important;
+                    padding-right: 6px !important;
+                    margin-left: -8px !important;
+                }
+            }
+
+            &-edit{
+                margin-left: auto;
+                background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='48px' height='48px'%3E%3Cpath d='M 18 2 L 15.585938 4.4140625 L 19.585938 8.4140625 L 22 6 L 18 2 z M 14.076172 5.9238281 L 3 17 L 3 21 L 7 21 L 18.076172 9.9238281 L 14.076172 5.9238281 z' fill='%2344546F'/%3E%3C/svg%3E");
+                background-position: center;
+                background-size: 70%;
+                background-repeat: no-repeat;
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+
+    &__add{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3px;
+
+        &-btn{
+            width: 25px;
+            height: 25px;
+            min-width: 25px;
+            min-height: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 70%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' width='30px' height='30px'%3E%3Cpath fill='%2344546F' d='M1.707 22.199L4.486 19.42 13.362 28.297 35.514 6.145 38.293 8.924 13.362 33.855z'/%3E%3Cpath fill='%2344546F' d='M35.514,6.852l2.072,2.072L13.363,33.148L2.414,22.199l2.072-2.072l8.169,8.169l0.707,0.707 l0.707-0.707L35.514,6.852 M35.514,5.438L13.363,27.59l-8.876-8.876L1,22.199l12.363,12.363L39,8.924L35.514,5.438L35.514,5.438z'/%3E%3C/svg%3E");
+        }
+    }
+
+    &__btn{
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+}

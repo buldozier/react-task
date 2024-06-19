@@ -1,0 +1,82 @@
+.date-picker {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1000;
+  min-width: 348px;
+  width: 100%;
+  background-color: var(--site-light-color);
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: var(--site-box-shadow);
+
+  @media screen and (max-width: 500px) {
+    min-width: unset;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 8px 0;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: var(--site-default-color);
+    line-height: 120%;
+  }
+
+  &__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg width=%2724%27 height=%2724%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27m7 17 5-5m0 0 5-5m-5 5L7 7m5 5 5 5%27 stroke=%27%2344546F%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px 18px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #dfe1e6;
+    }
+  }
+}
+
+.react-calendar {
+  border: none !important;
+  margin: auto;
+
+  & button {
+    transition: all 0.2s ease-in-out;
+
+  }
+}
+
+.react-calendar__navigation {
+  gap: 5px;
+}
+
+.react-calendar__tile {
+  border-radius: 3px;
+}
+
+.react-calendar__navigation button {
+  border-radius: 8px;
+  &:hover {
+    background-color: #dfe1e6 !important;
+
+  }
+}

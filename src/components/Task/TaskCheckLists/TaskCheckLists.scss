@@ -1,0 +1,39 @@
+.task-checklists{
+    margin: 20px 0;
+
+    &__item{
+        margin-top: 10px;
+
+        &-header{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px;
+
+            &-counter{
+                font-size: 12px;
+                margin-left: auto;
+            }
+        }
+
+        &-point{
+            display: flex;
+            align-items: center;
+        }
+
+
+    }
+}
+.app li.task-checklists__item-point{
+    padding-left: 50px;
+    position: relative;
+
+    &::before{
+        left: 30px;
+    }
+    .custom-checkbox{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

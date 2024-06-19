@@ -1,0 +1,171 @@
+.project-task {
+  display: block;
+  text-decoration: none !important;
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+
+  //padding-bottom: 7px;
+
+  & > a {
+    text-decoration: none !important;
+  }
+
+  &__wrapper {
+    position: relative;
+    padding: 8px 20px 8px 12px;
+    background: var(--site-light-color);
+    border-radius: 8px;
+    transition: background .2s ease, opacity 0.2s;
+    box-shadow: 0 1px 1px #091e4220, 0 0 1px #091e424f;
+
+    &:hover {
+      background: var(--site-block-bg-color);
+    }
+  }
+
+  &__marked {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background: #ff2400;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    color: var(--site-default-color);
+    font-size: 14px;
+    opacity: 0.9;
+    word-break: break-word;
+  }
+
+  &__footer {
+    font-size: 12px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    vertical-align: top;
+    white-space: nowrap;
+    margin-top: 6px;
+    color: var(--site-accent-color);
+    padding: 3px 8px;
+    background-color: var(--site-block-bg-color);
+    border-radius: 3px;
+    width: fit-content;
+
+    & svg {
+      margin-top: 1px;
+      width: 12px;
+      height: 12px;
+      stroke: var(--site-accent-color);
+    }
+
+    //&.light-red {
+    //  background-color: #FFD5D2;
+    //  color: #AE2E24;
+    //
+    //  & svg {
+    //    stroke: #AE2E24;
+    //  }
+    //}
+
+    //&.red {
+    //  background-color: #C9372C;
+    //  color: var(--site-light-color);
+    //
+    //  & svg {
+    //    stroke: var(--site-light-color);
+    //  }
+    //}
+    //
+    //&.orange {
+    //  background-color: #F5CD47;
+    //  //color: #9f6a00;
+    //}
+
+    &.green {
+      background-color: #c8ffe9;
+      color: var(--site-default-color);
+      & svg {
+        stroke: var(--site-default-color);
+      }
+
+    }
+
+    //&.blue {
+    //  background-color: #d3f4ff;
+    //  //color: #008dba;
+    //}
+  }
+
+  &__draggable {
+    content: '';
+    display: block;
+    height: 0;
+    background: var(--site-light-grey-color);
+    border: 1px dashed var(--site-light-color);
+    border-radius: 8px;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    transition: .2s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    opacity: 0;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 6px;
+    color: var(--site-accent-color);
+
+    &-item{
+      vertical-align: top;
+      white-space: nowrap;
+      padding: 3px 8px;
+      background-color: #C6CACE70;
+      border-radius: 14px;
+      width: fit-content;
+    }
+  }
+
+  &__checklist{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 6px;
+
+    &-item{
+      padding: 2px 8px;
+      padding-left: 22px;
+      vertical-align: top;
+      white-space: nowrap;
+      // background-color: #C6CACE70;
+      border: 1px solid #C6CACE;
+      color: var(--site-grey-color);
+      border-radius: 14px;
+      width: fit-content;
+      background-repeat: no-repeat;
+      background-position: 4px center;
+      background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='48px' height='48px'%3E%3Cpath d='M 12 2 C 6.486 2 2 6.486 2 12 C 2 17.514 6.486 22 12 22 C 17.514 22 22 17.514 22 12 C 22 10.874 21.803984 9.7942031 21.458984 8.7832031 L 19.839844 10.402344 C 19.944844 10.918344 20 11.453 20 12 C 20 16.411 16.411 20 12 20 C 7.589 20 4 16.411 4 12 C 4 7.589 7.589 4 12 4 C 13.633 4 15.151922 4.4938906 16.419922 5.3378906 L 17.851562 3.90625 C 16.203562 2.71225 14.185 2 12 2 z M 21.292969 3.2929688 L 11 13.585938 L 7.7070312 10.292969 L 6.2929688 11.707031 L 11 16.414062 L 22.707031 4.7070312 L 21.292969 3.2929688 z' fill='%23959595'/%3E%3C/svg%3E");
+      background-size: 15px;
+    }
+  }
+}
+
+.drag-over-card {
+  cursor: grabbing !important;
+  background-color: var(--site-light-color);
+}
+
+.drag-start-card .project-task__wrapper {
+  background-color: var(--site-light-color);
+  opacity: 0.5;
+}

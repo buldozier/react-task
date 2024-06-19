@@ -1,0 +1,113 @@
+/* holster.css
+ * стили основных блоков сайта, его сетки
+ *
+ */
+
+.l-page {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column wrap;
+	flex-flow: column wrap;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	width: 100%;
+	min-width: 320px;
+	min-height: 100vh;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.page-holder{
+	max-width: 100%;
+}
+@media (max-width: 991px) {
+	.l-page {
+		max-width: 100%;
+	}
+}
+	.l-page__holder {
+		width: 100%;
+		height: 100%;
+		padding: 0 0 0;
+	}
+		.l-wrapper {
+			width: 100%;
+			max-width: 1920px;
+			margin: 0 auto;
+			padding-right: 40px;
+			padding-left: 40px;
+		}
+		@media (max-width: 991px) {
+			.l-wrapper {
+				max-width: 100%;
+			}
+		}
+		@media (max-width: 499px) {
+			.l-wrapper {
+				padding-right: 10px;
+				padding-left: 10px;
+			}
+		}
+			.l-header {
+				position: relative;
+				width: 100%;
+			}
+			.l-header.fixed {
+				position: fixed;
+				width: 100%;
+				top: 0;
+				left: 0;
+				-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+				box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+				z-index: 101;
+			}
+			.l-content {
+				width: 100%;
+				justify-self: flex-start;
+				-webkit-box-flex: 1;
+				-ms-flex-positive: 1;
+				flex-grow: 1;
+			}
+	.l-footer {
+		width: 100%;
+	}
+	@media (max-width: 991px) {
+		.l-footer {
+			padding-top: 68px;
+		}
+	}
+	.l-footer a,
+	.l-footer a:visited {
+		text-decoration: none;
+	}
+	.l-footer a:hover {
+		text-decoration: none;
+	}
+	.l-footer__top {
+		padding-bottom: 83px;
+	}
+	@media (max-width: 991px) {
+		.l-footer__top {
+			padding-bottom: 0;
+		}
+	}
+	.l-footer__middle {
+		margin-bottom: 52px;
+	}
+	@media (max-width: 991px) {
+		.l-footer__middle {
+			margin-bottom: 40px;
+		}
+	}
+	.l-footer__bottom {
+		padding: 20px 0;
+	}
+	@media (max-width: 991px) {
+		.l-footer__bottom {
+			padding: 0;
+		}
+	}

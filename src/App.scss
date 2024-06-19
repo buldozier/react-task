@@ -1,0 +1,156 @@
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  font-family: var(--site-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  min-height: 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #dfe1e6;
+  padding: 6px 12px;
+  color: var(--site-input-text-color);
+  margin: 0;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: border 0.2s, color 0.2s;
+}
+
+.app {
+  position: relative;
+  background-color: var(--site-light-color);
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  & input[type=text] {
+    border-color: #0c66e4;
+    border-radius: 4px;
+    border-width: 2px;
+    font-size: 14px;
+    line-height: 20px;
+    min-height: 30px;
+    padding: 6px 12px;
+    &:hover, &:focus {
+      border-color: #0c66e4;
+    }
+  }
+}
+
+.page-holder .app a {
+  color: var(--site-accent-blue-color);
+  text-decoration: none;
+
+  &:hover, &:active {
+    text-decoration: underline;
+    color: var(--site-accent-blue-color);
+  }
+}
+
+.app ul, .app ol {
+  padding: 0;
+  margin: 0.6em 0;
+  list-style: none;
+}
+
+.app ol {
+  counter-reset: list;
+}
+
+.app li {
+  position: relative;
+  margin: 0.7em 0;
+  list-style: none;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    color: var(--site-accent-color);
+  }
+}
+
+.app ol li {
+  counter-increment: list;
+  padding-left: 1.2em;
+}
+
+.app ol li::before {
+  content: counter(list)'.';
+  top: 0;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.app ul li {
+  padding-left: 1.2em;
+
+  &::before {
+    content: "";
+    top: 0.45em;
+    font-size: 1.2em;
+    width: 0.4em;
+    height: 0.4em;
+    background: #999;
+    border-radius: 50%;
+  }
+}
+
+
+
+// Создание логотипа
+
+.task-logo {
+  display: flex;
+  gap: 10px;
+  margin-right: 55px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--site-default-color);
+  line-height: 100%;
+  text-decoration: none;
+  transition: color 0.2s, background 0.2s;
+  cursor: default;
+
+  & span {
+    position: relative;
+    width: 15px;
+    text-align: center;
+  }
+  & span:after {
+    content: '';
+    position: absolute;
+    height: 5%;
+    width: 4px;
+    background: #555;
+    right: -7px;
+    top: 45%;
+    transform: translateY(-50%);
+    margin-top: 2px;
+  }
+  & span:last-child:after {
+    content: none;
+  }
+}
+
+a {
+  &.task-logo:hover {
+    text-decoration: none;
+    color: #F04949;
+    cursor: pointer;
+  }
+
+  &.task-logo:hover span:after {
+    background: #F04949;
+  }
+}
+
+
+
+
+

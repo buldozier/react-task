@@ -1,0 +1,76 @@
+.project-members-dropdown {
+  top: calc(100% + 10px);
+  left: 0;
+  padding: 12px !important;
+
+
+  &__list {
+    margin-bottom: 10px;
+    overflow-y: auto;
+    max-height: 40vh;
+    overflow-x: hidden;
+  }
+
+  &__item {
+    position: relative;
+    padding: 3px 0;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+
+    & .add,
+    & .delete {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m7 17 5-5m0 0 5-5m-5 5L7 7m5 5 5 5' stroke='%23C6CACE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: 20px;
+      cursor: pointer;
+      display: block;
+      height: 20px;
+      max-height: 20px;
+      max-width: 20px;
+      min-height: 20px;
+      min-width: 20px;
+      transition: background .2s ease;
+      width: 20px;
+    }
+
+    & .add {
+      transform: rotate(45deg);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    right: 0;
+    left: unset;
+  }
+}
+
+h4.project-members-dropdown__title {
+  font-size: 14px;
+  color: var(--site-default-color);
+  line-height: 120%;
+  background: transparent;
+  border-radius: 3px;
+  font-weight: 700;
+  margin: 0;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: background .2s;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.project-members-dropdown .project-members-dropdown__search .search-members {
+  padding: 7px 8px;
+  margin-bottom: 10px;
+
+}
+
+.members-submit {
+  padding: 10px;
+  width: 100%;
+}
